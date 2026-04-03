@@ -25,3 +25,4 @@ bolt-lang.workspace = true
 serde = { version = "1.0", features = ["derive"] }
 player-account = { path = "../../components/player-account", features = ["cpi"] }
 bet-state = { path = "../../components/bet-state", features = ["cpi"] }
+parse-utils = { path = "../../libs/parse-utils" }
