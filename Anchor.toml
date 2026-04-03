@@ -7,11 +7,10 @@ skip-lint = false
 [programs.localnet]
 bet-state = "EsczbhdFymbvhM723w9FP5R9kKKngpM2QFrGYKhHKK9p"
 deposit = "4KWeTKZBP1mvqhaB1rPTMTEsUyAirwE8qJdWhN7HipUz"
-movement = "T5THpqiFBWVEXtr4Nf5494vrCC65fk76BxQ8aYMjDam"
+
 place-bet = "GHMykEcU5yscha3qrP2matVt8M5iNbXsLPiD7TvsEDbg"
 player-account = "Hu5ojHizPZhfNhogv6bPUB8dukBpjpj9uzpkdNH79Dzq"
-position = "G6skHEd5wk2ySXcT9ki2fQMHwW7BpgAwa8aXeRB2p19h"
-price_prediction = "5YvsZGosXSe6JwXWk2JEYrNZ8bBeYyrsvfK6S7td4gv8"
+
 resolve-bet = "E9RNH5oXdKBad3LqTSfKiE3cigPjVvcuWC4gygzCmyZP"
 withdraw = "9vinxaUTJMi9P9tdGnwNg4NgVitarkY1jenvWh5btVso"
 
@@ -23,7 +22,7 @@ cluster = "localnet"
 wallet = "~/.config/solana/id.json"
 
 [workspace]
-members = ["programs/*", "programs-ecs/components/*", "programs-ecs/systems/*"]
+members = ["programs-ecs/components/*", "programs-ecs/systems/*"]
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

@@ -1243,15 +1243,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "movement"
-version = "0.2.4"
-dependencies = [
- "bolt-lang",
- "position",
- "serde",
-]
-
-[[package]]
 name = "num-bigint"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1381,26 +1372,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "position"
-version = "0.2.4"
-dependencies = [
- "bolt-lang",
-]
-
-[[package]]
 name = "ppv-lite86"
 version = "0.2.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "85eae3c4ed2f50dcfe72643da4befc30deadb458a9b590d720cde2f2b1e97da9"
 dependencies = [
  "zerocopy 0.8.42",
-]
-
-[[package]]
-name = "price-prediction"
-version = "0.2.4"
-dependencies = [
- "bolt-lang",
 ]
 
 [[package]]

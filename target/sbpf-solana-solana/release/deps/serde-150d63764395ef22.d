@@ -1,0 +1,14 @@
+/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/deps/libserde-150d63764395ef22.rmeta: /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/lib.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/integer128.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/mod.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/de.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/ser.rs /Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/build/serde-fa8591fc622f7eb6/out/private.rs
+
+/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/deps/libserde-150d63764395ef22.rlib: /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/lib.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/integer128.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/mod.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/de.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/ser.rs /Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/build/serde-fa8591fc622f7eb6/out/private.rs
+
+/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/deps/serde-150d63764395ef22.d: /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/lib.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/integer128.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/mod.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/de.rs /Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/ser.rs /Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/build/serde-fa8591fc622f7eb6/out/private.rs
+
+/Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/lib.rs:
+/Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/integer128.rs:
+/Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/mod.rs:
+/Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/de.rs:
+/Users/emile/.cargo/registry/src/index.crates.io-6f17d22bba15001f/serde-1.0.228/src/private/ser.rs:
+/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/build/serde-fa8591fc622f7eb6/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/build/serde-fa8591fc622f7eb6/out

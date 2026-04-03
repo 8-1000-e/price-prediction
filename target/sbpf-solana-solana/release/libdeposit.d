@@ -1,0 +1,1 @@
+/Users/emile/Documents/TNTX/price-prediction/target/sbpf-solana-solana/release/libdeposit.rlib: /Users/emile/Documents/TNTX/price-prediction/programs-ecs/components/player-account/src/lib.rs /Users/emile/Documents/TNTX/price-prediction/programs-ecs/systems/deposit/src/lib.rs

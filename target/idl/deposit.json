@@ -1,0 +1,162 @@
+{
+  "address": "4KWeTKZBP1mvqhaB1rPTMTEsUyAirwE8qJdWhN7HipUz",
+  "metadata": {
+    "name": "deposit",
+    "version": "0.2.4",
+    "spec": "0.1.0",
+    "description": "Created with Bolt"
+  },
+  "instructions": [
+    {
+      "name": "bolt_execute",
+      "discriminator": [
+        75,
+        206,
+        62,
+        210,
+        52,
+        215,
+        104,
+        109
+      ],
+      "accounts": [
+        {
+          "name": "authority"
+        }
+      ],
+      "args": [
+        {
+          "name": "args",
+          "type": "bytes"
+        }
+      ],
+      "returns": {
+        "vec": "bytes"
+      }
+    },
+    {
+      "name": "execute",
+      "docs": [
+        "Deposit SOL into the player's betting balance.",
+        "Args: { \"amount\": <lamports u64> }",
+        "",
+        "TODO (Emile):",
+        "1. Parse \"amount\" from JSON args",
+        "2. Transfer SOL from signer → PlayerAccount PDA (via CPI or lamport transfer)",
+        "3. Increment player.balance += amount",
+        "4. If first deposit, set player.authority = signer",
+        "5. Validate: authority must match signer (if already set)"
+      ],
+      "discriminator": [
+        130,
+        221,
+        242,
+        154,
+        13,
+        193,
+        189,
+        29
+      ],
+      "accounts": [
+        {
+          "name": "player_account"
+        },
+        {
+          "name": "authority"
+        }
+      ],
+      "args": [
+        {
+          "name": "_args",
+          "type": "bytes"
+        }
+      ],
+      "returns": {
+        "vec": "bytes"
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "name": "PlayerAccount",
+      "discriminator": [
+        224,
+        184,
+        224,
+        50,
+        98,
+        72,
+        48,
+        236
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "BoltMetadata",
+      "docs": [
+        "Metadata for the component."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "docs": [
+              "Wallet that owns this account"
+            ],
+            "type": "pubkey"
+          },
+          {
+            "name": "balance",
+            "docs": [
+              "SOL balance in lamports (deposited for betting)"
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "total_bet",
+            "docs": [
+              "Lifetime total bet in lamports"
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "total_won",
+            "docs": [
+              "Lifetime total won in lamports"
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "active_bets",
+            "docs": [
+              "Number of active (pending) bets"
+            ],
+            "type": "u8"
+          },
+          {
+            "name": "bolt_metadata",
+            "type": {
+              "defined": {
+                "name": "BoltMetadata"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ const COLS = 10;
 const ROWS = 9;
 const HISTORY_DURATION_MS = 10_000; // 10s per history column
 const PREDICT_DURATION_MS = 3_000;  // 3s per prediction column
-const RANGE_PERCENT = 0.0125;
+const RANGE_PERCENT = 0.0135;
 const CELL_W = 90;
 const CELL_H = 70;
 const HISTORY_COLS = 3;
@@ -67,12 +67,12 @@ interface Bet {
 // Multiplier based on columns remaining — more remaining = riskier = higher reward
 function getMultiplier(col: number, currentCol: number): number {
   const remaining = col - currentCol;
-  if (remaining <= 1) return 1.2;
-  if (remaining <= 2) return 1.5;
-  if (remaining <= 3) return 2;
-  if (remaining <= 4) return 2.5;
-  if (remaining <= 5) return 3;
-  if (remaining <= 6) return 4;
+  if (remaining <= 1) return 1.5;
+  if (remaining <= 2) return 2;
+  if (remaining <= 3) return 2.5;
+  if (remaining <= 4) return 3;
+  if (remaining <= 5) return 3.5;
+  if (remaining <= 6) return 4.5;
   return 1.8;
 }
 
